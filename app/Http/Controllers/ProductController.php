@@ -34,7 +34,7 @@ public function index()
     }
     public function edit(Product $product)
     {
-    return view('products.form', [
+    return view('product.form', [
     'title' => 'Edit',
     'product' => $product,
     'route' => route('product.update', $product),

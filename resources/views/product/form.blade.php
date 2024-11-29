@@ -1,15 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Form {{ $title }} Produk</title>
- <link 
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
-rel="stylesheet">
-</head>
-<body class="container">
- <div class="row justify-content-center mt-5">
+@extends('template')
+
+@section('title')
+    {{ $title }} Produk
+@endsection
+
+@section('content')
+<div class="row justify-content-center mt-5">
  <div class="col-md-6">
  <h4>Form {{ $title }} Produk</h4>
  <form class="border p-4" method="POST" action="{{ $route }}">
@@ -37,9 +33,4 @@ rel="stylesheet">
  </div>
  </form>
  </div>
- </div>
- <script 
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-></script>
-</body>
-</html>
+@endsection
